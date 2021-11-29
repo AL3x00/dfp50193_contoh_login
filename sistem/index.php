@@ -23,9 +23,11 @@ require 'conn.php';
 
     <?php
     echo "<br>";
-    $pswd = password_hash('saw', PASSWORD_BCRYPT);
+    $pswd = password_hash('abc123', PASSWORD_BCRYPT);
     echo $pswd;
     ?>
+
+    <p><a href="register.php">Register</a></p>
 </body>
 
 </html>

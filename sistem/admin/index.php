@@ -28,6 +28,7 @@ $stmt->fetch();
     </h3>
     <p><a href="../logout.php">Logout</a></p>
 
+    <a href="tambah.php">Add</a>
     <table border="1" cellpadding="8" cellspacing="0">
         <tr bgcolor="#ffd700">
             <th>ID</th>
@@ -46,9 +47,9 @@ $stmt->fetch();
                     <td><?php echo $row->idpengguna; ?></td>
                     <td><?php echo $row->staff_name; ?></td>
                     <td>
-                        <a href="kemaskini.php?id_pelajar=<?php echo $row->idstaff; ?>">Edit</a>
+                        <a href="kemaskini.php?idstaff=<?php echo $row->idstaff; ?>">Edit</a>
                         |
-                        <a href="padam.php?id_pelajar=<?php echo $row->idstaff; ?>" onclick="return confirm('Betul ke nak padam?');">Delete</a>
+                        <a href="padam.php?idstaff=<?php echo $row->idstaff; ?>" onclick="return confirm('Betul ke nak padam?');">Delete</a>
                     </td>
                 </tr>
         <?php
